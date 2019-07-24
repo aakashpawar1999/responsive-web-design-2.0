@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI';
+    background-color: #3f3d56;
+    margin: auto;
+    max-width: 1920px;
+}
+
+header {
+    height: 15vh;
+}
+
+header h3 {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 28px;
+    color: #fff;
+    float: left;
+}
+
+header .main-nav-bar {
+    float: right;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+header .main-nav-bar li {
+    display: inline;
+    margin-left: 15px;
+}
+
+header .main-nav-bar li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+header .main-nav-bar li:nth-child(-n + 2) a:hover {
+    color: #d1d1d1;
+}
+
+header .main-nav-bar .signup {
+    background-color: #8e5dff;
+    padding: 12px 25px;
+    border-radius: 10px;
+}
+
+header .main-nav-bar .signup:hover {
+    background-color: #7c0cfd;
+}
+
+header .btn-open, .menu {
+    visibility: hidden;
+}
+
+section h2 {
+    float: right;
+    margin-top: 200px;
+    margin-right: 200px;
+    font-size: 55px;
+    color: #fff;
+}
+
+section img {
+    float: left;
+    margin-top: 50px;
+    margin-left: 200px;
+    width: 600px;
+    height: auto;
+}
+
+@media (max-width: 1550px) {
+    section h2 {
+        margin-right: 80px;
+    }
+
+    section img {
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 1300px) {
+    section {
+        margin-top: 20px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    section h2 {
+        float: none;
+        margin: 40px 0px;
+        font-size: 40px;
+    }
+
+    section img {
+        float: none;
+        width: 550px;
+    }
+}
+
+@media (max-width: 720px) {
+    header .main-nav-bar {
+        visibility: hidden;
+    }
+
+    header .btn-open, .menu {
+        visibility: visible;
+    }
+
+    header .btn-open {
+        position: absolute;
+        right: 0;
+        float: right;
+        margin-right: 30px;
+        margin-top: 20px;
+        border: none;
+        background-color: transparent;
+    }
+
+    header .btn-open-visible {
+        visibility: visible;
+    }
+
+    header .btn-open .menu-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    header .menu {
+        height: 100vh;
+        width: 450px;
+        float: right;
+        background-color: #8e5dff;
+    }
+
+    .menu-slide-in {
+        position: fixed;
+        right: 0vh;
+        transition: right 0.5s;
+    }
+
+    .menu-slide-out {
+        position: fixed;
+        right: -450px;
+        transition: right 0.5s;
+    }
+
+    header .menu ul {
+        margin: 30vh 10vh;
+    }
+
+    header .menu ul li {
+        display: block;
+        margin: 100px 0px;
+    }
+
+    header .menu ul li a {
+        padding: 10px 80px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 28px;
+    }
+
+    header .menu ul li a:hover {
+        background-color: #a293ff;
+    }
+
+    header .menu .btn-close {
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        border: none;
+        background-color: transparent;
+    }
+
+    header .menu .btn-close .cancel-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    section img {
+        margin-left: 50px;
+        width: 450px;
+    }
+}
+
+@media (max-width: 450px) {
+    header .menu {
+        height: 100%;
+        width: 100%;
+    }
+
+    .menu-slide-out {
+        right: -100%;
+    }
+
+    header .menu ul {
+        margin: 25vh 9vh;
+    }
+
+    header .menu ul li a {
+        padding: 10px 30px;
+    }
+
+    section {
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    section img {
+        width: 300px;
+    }
+}
